@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Integrantes() {
   return (
-    <div style={{ justifyItems: "center" }}>
+    <div className={"nosotros"}>
       <motion.div
         className="text-center"
         initial={{ opacity: 0, y: 30 }}
@@ -27,7 +27,7 @@ export default function Integrantes() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="text-3xl font-bold mb-2"
+        className="text-3xl font-bold mb-2 text-center"
       >
         Quiénes somos?
       </motion.h3>

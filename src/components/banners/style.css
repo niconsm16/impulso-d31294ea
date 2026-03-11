@@ -3,14 +3,33 @@
 }
 
 .banners-container {
+    /*display: grid;
+    width: 100%;
+    min-height: 100dvh;
+    height: auto;
+    padding: 2rem 0;
+    justify-self: center;
+    grid-template-rows: auto auto;*/
+    /* .banners-container*/
     display: grid;
     width: 100%;
     min-height: 100dvh;
     height: auto;
-    max-width: 1200px;
     padding: 2rem 0;
     justify-self: center;
     grid-template-rows: auto auto;
+    background:
+        url(assets/images/impulso_bg2.jpg),
+        linear-gradient(45deg, #19191973, #000919);
+    background-size: cover;
+    background-position: center;
+    background-attachment: local;
+    background-blend-mode: soft-light;
+}
+
+.banners-container .nosotros {
+    max-width: 1200px;
+    justify-self: center;
 }
 
 .banners-container .integrantes-container {

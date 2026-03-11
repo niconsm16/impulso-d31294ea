@@ -41,10 +41,10 @@ export const grupo: TIntegrante[] = [
   },
   {
     nombre: "María Jacqueline Rea León",
-    licenciatura: "Administracion y empresas y Mkt Digital",
+    licenciatura: "Administracion y empresas y Marketing Digital",
   },
   {
-    nombre: "Adan concha Gonzalez",
+    nombre: "Adan Concha Gonzalez",
     licenciatura: "Ingeniería Industrial",
   },
 ];
