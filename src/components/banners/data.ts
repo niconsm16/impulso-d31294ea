@@ -47,4 +47,8 @@ export const grupo: TIntegrante[] = [
     nombre: "Adan Concha Gonzalez",
     licenciatura: "Ingeniería Industrial",
   },
+  {
+    nombre: "Luis Manuel Valadez Gallegos",
+    licenciatura: "Ingeniería Industrial",
+  },
 ];

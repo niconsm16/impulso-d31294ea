@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
-import { Rocket, ArrowUpRight } from "lucide-react";
 import CTALogo from "./components/logo";
-import "./style.css";
 import DemoButton from "./buttons/demo-button";
+import "./style.css";
 
 export function ImpulsoCTA() {
   return (

@@ -9,7 +9,7 @@ export function ImpulsoFooter() {
           <span className="text-xs text-muted-foreground font-mono">v1.0</span>
         </div>
         <p className="text-sm text-muted-foreground">
-          © 2026 Impulso. Inteligencia de mercado para marketplaces.
+          © 2026 Impulso. Inteligencia de mercado para e-commerce.
         </p>
       </div>
     </footer>
