@@ -1,20 +1,75 @@
-.banners-container {
-    display: flex;
-    gap: 2rem;
-    width: 100%;
-    max-width: 1200px;
-    height: 100dvh;
-    padding: 2rem 0;
-    justify-self: center;
+:root {
+    --integrantes-color: #7778a9;
 }
 
-.banners-container img {
+.banners-container {
+    display: grid;
+    width: 100%;
+    min-height: 100dvh;
+    height: auto;
+    max-width: 1200px;
+    padding: 2rem 0;
+    justify-self: center;
+    grid-template-rows: auto auto;
+}
+
+.banners-container .integrantes-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 0 4rem;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nosotros-title {
+    color: var(--integrantes-color);
+    border: 1px solid var(--integrantes-color);
+}
+
+.integrantes-container .integrante {
+    border: 1px solid var(--azul);
+    border-radius: 10px;
+    place-self: center;
+    padding: 1rem;
+    width: 330px;
+    height: 100px;
+}
+
+.integrantes-container .nombre {
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-weight: bold;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.integrantes-container .licenciatura {
+    color: var(--integrantes-color);
+}
+
+.integrantes-container .links {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.integrantes-container .links img {
+    width: 20px;
+    height: 20px;
+}
+
+.banner-container {
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+    grid-template-columns: auto auto;
+}
+
+.banner-container img {
     width: auto;
+    height: 750px;
 }
 
 @media screen and (max-width: 540px) {
-    .banners-container {
-        height: auto;
-        flex-wrap: wrap;
+    .banner-container {
+        grid-template-columns: auto;
     }
 }

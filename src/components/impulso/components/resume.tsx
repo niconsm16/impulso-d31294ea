@@ -13,7 +13,7 @@ export default function ImpulsoResume() {
         {" "}
         Decisiones inteligentes
       </span>{" "}
-      para ecommerces que quieren liderar.
+      para e-commerces que quieren liderar.
     </motion.p>
   );
 }

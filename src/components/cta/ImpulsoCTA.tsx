@@ -41,7 +41,7 @@ export function ImpulsoCTA() {
           <div className="flex flex-wrap gap-4 justify-center">
             <DemoButton />
             <a
-              href="mailto:contacto@impulso.ai"
+              href="mailto:contacto@contacto@niconsm.dev"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-lg font-semibold glass-dark neon-border text-foreground gentle-animation impulso-button-glow"
             >
               Contactar al Equipo
