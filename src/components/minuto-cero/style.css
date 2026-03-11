@@ -35,7 +35,7 @@
 
 .m0-container {
     background:
-        url(assets/images/m0_bg.jpg),
+        url(/assets/images/m0_bg.jpg),
         linear-gradient(45deg, #ffffffbf, #fcfcfce3);
     background-blend-mode: color;
     background-size: cover;
