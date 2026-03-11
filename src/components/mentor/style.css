@@ -1,0 +1,28 @@
+.mentor-container {
+    background:
+        url(assets/images/mentor_bg.jpg),
+        linear-gradient(45deg, #000000e3, #4e4b72);
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.mentor-container .mentor-logo {
+    margin-bottom: 2rem;
+}
+
+.mentor-container .mentor-logo,
+.mentor-container .mentor-logo svg {
+    height: 7rem;
+    justify-items: center;
+    fill: white;
+}
+
+.mentor-card {
+    background: var(--color-mentor-transparent);
+}
+
+@media screen and (max-width: 540px) {
+    .mentor-container .mentor-logo svg {
+        width: stretch;
+    }
+}

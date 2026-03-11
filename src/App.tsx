@@ -1,8 +1,9 @@
-import { ImpulsoHero } from './components/impulso/ImpulsoHero'
-import { MinutoCero } from './components/impulso/MinutoCero'
-import { Mentor } from './components/impulso/Mentor'
-import { ImpulsoCTA } from './components/impulso/ImpulsoCTA'
-import { ImpulsoFooter } from './components/impulso/ImpulsoFooter'
+import { ImpulsoHero } from "./components/impulso/ImpulsoHero";
+import { MinutoCero } from "./components/minuto-cero/MinutoCero";
+import { Mentor } from "./components/mentor/Mentor";
+import { ImpulsoCTA } from "./components/cta/ImpulsoCTA";
+import { ImpulsoFooter } from "./components/footer/ImpulsoFooter";
+import Banners from "./components/banners/banners";
 
 export default function App() {
   return (
@@ -11,9 +12,10 @@ export default function App() {
         <ImpulsoHero />
         <MinutoCero />
         <Mentor />
+        <Banners />
         <ImpulsoCTA />
       </main>
       <ImpulsoFooter />
     </div>
-  )
+  );
 }

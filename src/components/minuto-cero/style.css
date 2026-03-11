@@ -1,0 +1,53 @@
+.impulso-primary {
+    background: var(--naranja);
+}
+
+.impulso-text-primary {
+    color: var(--naranja);
+}
+
+.impulso-text-foreground {
+    color: black;
+}
+
+.impulso-text-muted-foreground {
+    color: #b1b1b1;
+}
+
+.impulso-text-muted-foreground-2 {
+    color: #545454;
+}
+
+.impulso-card {
+    border: 1px solid var(--naranja);
+}
+
+.impulso-glass-dark {
+    background: rgb(0 0 0 / 87%);
+    -webkit-backdrop-filter: blur(20px) saturate(1.5);
+    backdrop-filter: blur(20px) saturate(1.5);
+    border: 1px solid var(--azul);
+}
+
+.impulso-border {
+    border: 1px solid var(--naranja);
+}
+
+.m0-container {
+    background:
+        url(assets/images/m0_bg.jpg),
+        linear-gradient(45deg, #ffffffbf, #fcfcfce3);
+    background-blend-mode: color;
+    background-size: cover;
+    padding-top: 2rem;
+}
+
+.m0-container .m0-logo {
+    margin-bottom: 2rem;
+}
+
+.m0-container .m0-logo,
+.m0-container .m0-logo svg {
+    height: 7rem;
+    justify-items: center;
+}

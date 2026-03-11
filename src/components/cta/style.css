@@ -1,0 +1,32 @@
+:root {
+    --impulso-glow: 0 0 20px rgb(255 87 34 / 90%), 0 0 40px rgb(255 152 0 / 9%);
+}
+
+.cta-container .impulso-text-glow {
+    text-shadow: var(--impulso-glow);
+}
+
+.cta-container .impulso-button-demo,
+.cta-container .impulso-button-glow:hover {
+    box-shadow: var(--impulso-glow);
+}
+
+.cta-container .impulso-button-demo:hover {
+    box-shadow: none;
+}
+
+.cta-container .video-container {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    overflow: clip;
+}
+
+.cta-container .video-container video {
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 12px;
+    left: 0px;
+    object-fit: none;
+}

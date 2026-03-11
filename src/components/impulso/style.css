@@ -1,0 +1,119 @@
+.impulso-container {
+    background: linear-gradient(270deg, #f3f3f3, #f05421, #0d2b51);
+    background-image: url("assets/images/impulso_bg.jpg");
+    /*background-size: 600% 600%;*/
+    background-size: cover;
+    /*animation: gradientMove 12s ease infinite;*/
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.impulso-box {
+    background: rgba(255 255 255 / 60%);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow:
+        inset 0 0 12px rgba(0 0 0 / 8%),
+        0 30px 50px rgba(0 0 0 / 70%);
+}
+
+.impulso-container .logos-container {
+    justify-content: center;
+}
+
+.impulso-container .logos-container a {
+    align-content: center;
+}
+
+.impulso-container .logos-container svg {
+    min-width: 250px;
+    height: 50px;
+}
+
+.impulso-container .minuto_cero-button {
+    background: var(--minuto_cero-bg);
+}
+
+.impulso-container .mentor-button {
+    background: var(--color-mentor);
+}
+
+.impulso-slogan {
+    color: var(--azul);
+}
+
+.impulso-resume {
+    margin-top: 2rem;
+}
+
+.impulso-video {
+    height: 30dvh;
+    justify-self: center;
+    margin: 30px 0px;
+    border: 0;
+    border-radius: 10px;
+    outline: 0;
+}
+
+.impulso-button {
+    box-shadow: 0 0 25px rgba(0 0 0 / 39%);
+}
+
+.impulso-button:hover {
+    box-shadow: 0 0 25px rgba(0 0 0 / 65%);
+}
+
+@media screen and (max-width: 830px) {
+    .impulso-box {
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .impulso-box {
+        padding-top: 0;
+    }
+
+    .impulso-video {
+        height: 200px;
+        margin-top: 0;
+    }
+
+    .impulso-video video {
+        margin: 0;
+        padding: 0;
+    }
+
+    .impulso-resume {
+        margin-top: 0;
+    }
+
+    .impulso-resume,
+    .impulso-slogan {
+        font-size: 1rem !important;
+    }
+
+    .impulso-slogan {
+        margin-bottom: 20px !important;
+    }
+
+    .impulso-container .logos-container a {
+        width: 40dvw;
+    }
+
+    .impulso-container .logos-container svg {
+        height: 20px;
+        justify-self: center;
+    }
+}
