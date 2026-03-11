@@ -26,7 +26,7 @@ export const rutas: Record<WebType, WebIcon> = {
 export const grupo: TIntegrante[] = [
   {
     nombre: "Nicolás S. Machicado Miranda",
-    licenciatura: "Ingeniería de Sistemas, Realizador y Producto",
+    licenciatura: "Ingeniería de Sistemas, Realizador, Producto",
     web: "www.niconsm.dev",
     ln: "nicolasmachicado",
   },
@@ -41,7 +41,7 @@ export const grupo: TIntegrante[] = [
   },
   {
     nombre: "María Jacqueline Rea León",
-    licenciatura: "Administracion y empresas y Marketing Digital",
+    licenciatura: "Administracion de empresas, Marketing Digital",
   },
   {
     nombre: "Adan Concha Gonzalez",

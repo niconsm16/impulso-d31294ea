@@ -22,6 +22,10 @@
     border: 1px solid var(--naranja);
 }
 
+.impulso-glow:hover {
+    box-shadow: var(--impulso-glow);
+}
+
 .impulso-glass-dark {
     background: rgb(0 0 0 / 87%);
     -webkit-backdrop-filter: blur(20px) saturate(1.5);

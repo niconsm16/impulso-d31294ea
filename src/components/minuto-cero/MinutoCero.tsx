@@ -111,7 +111,7 @@ export function MinutoCero() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-lg impulso-border bg-secondary/50 group-hover:neon-glow-strong gentle-animation">
+                <div className="p-3 rounded-lg impulso-border bg-secondary/50 gentle-animation impulso-glow">
                   <feature.icon className="w-6 h-6 impulso-text-primary" />
                 </div>
                 <div>

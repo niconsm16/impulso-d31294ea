@@ -39,7 +39,7 @@ export default function Integrantes() {
         className={"integrantes-container"}
       >
         {grupo.map((integrante) => (
-          <div className={"integrante"}>
+          <div className={"integrante"} key={integrante.nombre}>
             <div className={"nombre"}>
               {integrante.nombre}
               <div className={"links"}>
