@@ -19,7 +19,7 @@
     justify-self: center;
     grid-template-rows: auto auto;
     background:
-        url(assets/images/impulso_bg2.jpg),
+        url(/assets/images/impulso_bg2.jpg),
         linear-gradient(45deg, #19191973, #000919);
     background-size: cover;
     background-position: center;
