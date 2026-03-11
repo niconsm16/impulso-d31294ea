@@ -52,6 +52,7 @@
     padding: 1rem;
     width: 330px;
     height: 100px;
+    background: var(--color-mentor-transparent);
 }
 
 .integrantes-container .nombre {
