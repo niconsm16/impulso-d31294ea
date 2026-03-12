@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Arquitectura de IA Local</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <style>
+            body {
+                font-family:
+                    system-ui,
+                    Segoe UI,
+                    Roboto;
+                /*background: #f4f6f8;*/
+                margin: 0;
+                color: #1a1a1a;
+
+                background: url(assets/images/impulso_bg.jpg)
+                    rgba(255 255 255 / 50%);
+                background-blend-mode: color;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            .container {
+                max-width: 1300px;
+                margin: auto;
+                padding: 40px;
+            }
+            header {
+                text-align: center;
+                margin-bottom: 60px;
+            }
+            h1 {
+                font-size: 42px;
+                color: #0d2b51;
+                margin-bottom: 10px;
+            }
+            h2 {
+                margin-top: 60px;
+                color: #f05421;
+            }
+            section {
+                background: white;
+                padding: 40px;
+                border-radius: 10px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+                margin-bottom: 35px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th {
+                background: #0d2b51;
+                color: white;
+                padding: 14px;
+                text-align: left;
+            }
+            td {
+                padding: 14px;
+                border-bottom: 1px solid #eee;
+            }
+            tr:nth-child(even) {
+                background: #fafafa;
+            }
+            .grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+            }
+            .card {
+                background: #fafafa;
+                padding: 25px;
+                border-left: 6px solid #f05421;
+                border-radius: 6px;
+            }
+            .diagram {
+                margin-top: 40px;
+            }
+            .layer {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 15px;
+                margin: 20px 0;
+            }
+            .box {
+                background: #0d2b51;
+                color: white;
+                padding: 15px 25px;
+                border-radius: 6px;
+                font-size: 14px;
+            }
+            .arrow {
+                text-align: center;
+                font-size: 28px;
+                color: #f05421;
+            }
+            canvas {
+                margin-top: 30px;
+            }
+            @media (max-width: 900px) {
+                .grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Arquitectura de Inteligencia Artificial Local</h1>
+                <p>
+                    Infraestructura optimizada para independencia tecnológica y
+                    costos controlados
+                </p>
+            </header>
+
+            <section>
+                <h2>Resumen Estratégico</h2>
+                <div class="grid">
+                    <div class="card">
+                        <b>Objetivo</b>
+                        <ul>
+                            <li>Reducir costos operativos de IA</li>
+                            <li>Independencia tecnológica</li>
+                            <li>Escalabilidad progresiva</li>
+                            <li>Baja latencia</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <b>Principios de diseño</b>
+                        <ul>
+                            <li>Infraestructura on-premise</li>
+                            <li>Servicios desacoplados</li>
+                            <li>Mensajería asincrónica</li>
+                            <li>Escalabilidad horizontal</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Comparación de Costos (ROI 3 años)</h2>
+                <canvas id="roiChart"></canvas>
+                <p>
+                    Infraestructura local requiere una inversión inicial mayor
+                    pero reduce significativamente el gasto acumulado a largo
+                    plazo.
+                </p>
+            </section>
+
+            <section>
+                <h2>Infraestructura Hardware</h2>
+                <table>
+                    <tr>
+                        <th>Componente</th>
+                        <th>Especificación</th>
+                        <th>Costo</th>
+                    </tr>
+                    <tr>
+                        <td>GPU</td>
+                        <td>NVIDIA H100 / A100</td>
+                        <td>10,000 – 25,000 USD</td>
+                    </tr>
+                    <tr>
+                        <td>CPU</td>
+                        <td>Intel Xeon Gold 32 cores</td>
+                        <td>1,000 – 2,000 USD</td>
+                    </tr>
+                    <tr>
+                        <td>RAM</td>
+                        <td>128GB ECC</td>
+                        <td>500 – 800 USD</td>
+                    </tr>
+                    <tr>
+                        <td>Storage</td>
+                        <td>NVMe 2TB RAID</td>
+                        <td>300 – 500 USD</td>
+                    </tr>
+                    <tr>
+                        <td>Servidor</td>
+                        <td>Supermicro redundant PSU</td>
+                        <td>1,000 – 2,000 USD</td>
+                    </tr>
+                    <tr>
+                        <td>Red</td>
+                        <td>Switch 10GbE + UPS</td>
+                        <td>500 – 1,000 USD</td>
+                    </tr>
+                    <tr>
+                        <td><b>Total estimado</b></td>
+                        <td></td>
+                        <td><b>~32,000 USD</b></td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>Arquitectura del Sistema</h2>
+                <div class="diagram">
+                    <div class="layer">
+                        <div class="box">Usuarios</div>
+                        <div class="box">Tiendas</div>
+                    </div>
+                    <div class="arrow">↓</div>
+                    <div class="layer">
+                        <div class="box">RabbitMQ</div>
+                        <div class="box">Queue Workers</div>
+                    </div>
+                    <div class="arrow">↓</div>
+                    <div class="layer">
+                        <div class="box">Orquestador de Agentes</div>
+                        <div class="box">Tools Engine</div>
+                    </div>
+                    <div class="arrow">↓</div>
+                    <div class="layer"><div class="box">LLM 8B-20B</div></div>
+                    <div class="arrow">↓</div>
+                    <div class="layer">
+                        <div class="box">DynamoDB Local</div>
+                        <div class="box">Redis Cache / ScyllaDB</div>
+                        <div class="box">Postgres + pgVector</div>
+                    </div>
+                    <div class="arrow">↓</div>
+                    <div class="layer">
+                        <div class="box">Cluster Linux</div>
+                        <div class="box">Docker / K3s</div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Elementos que ejecutará</h2>
+                <table>
+                    <tr>
+                        <th>Elemento</th>
+                        <th>Función</th>
+                        <th>Consumo promedio</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Servidor Linux ligero (Alpine / Arch minimalista)
+                        </td>
+                        <td>Sistema operativo base del servidor</td>
+                        <td>RAM: 80-150MB | CPU: <1% idle</td>
+                    </tr>
+                    <tr>
+                        <td>Docker Swarm / K3s</td>
+                        <td>Orquestación de contenedores y servicios</td>
+                        <td>RAM: 200-400MB | CPU: 1-3%</td>
+                    </tr>
+                    <tr>
+                        <td>Bases de datos locales</td>
+                        <td>Persistencia y acceso a información del sistema</td>
+                        <td>
+                            RAM combinada aproximada: 1-2GB dependiendo del uso
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Agentes Zero Claw</td>
+                        <td>
+                            Agentes ligeros para automatización y delegación
+                        </td>
+                        <td>~5MB RAM por instancia</td>
+                    </tr>
+                    <tr>
+                        <td>LLM 8B-20B</td>
+                        <td>
+                            Modelo de lenguaje para razonamiento y herramientas
+                        </td>
+                        <td>Dependiente de GPU/VRAM</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>Base de Datos Complementaria</h2>
+                <table>
+                    <tr>
+                        <th>Base de datos</th>
+                        <th>Función</th>
+                        <th>Consumo promedio</th>
+                    </tr>
+                    <tr>
+                        <td>DynamoDB Local</td>
+                        <td>DB documental para catálogo</td>
+                        <td>
+                            RAM: 300-800MB | CPU: bajo | Storage dependiente del
+                            catálogo
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Redis</td>
+                        <td>Caché de consultas frecuentes</td>
+                        <td>RAM: 200MB-1GB según dataset | CPU muy bajo</td>
+                    </tr>
+                    <tr>
+                        <td>Postgres + pgvector</td>
+                        <td>Búsqueda semántica mediante embeddings</td>
+                        <td>
+                            RAM: 500MB-1.5GB | CPU moderado en consultas
+                            vectoriales
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ScyllaDB (escala futura)</td>
+                        <td>Reemplazo de Redis para alta concurrencia</td>
+                        <td>
+                            Limitado mediante flag <code>--memory</code> del
+                            proceso para evitar consumo total del host.
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>Procesamiento Asincrónico</h2>
+                <p>RabbitMQ gestiona las tareas asincrónicas del sistema.</p>
+                <ul>
+                    <li>Pedidos de clientes entran en cola</li>
+                    <li>La IA completa información progresivamente</li>
+                    <li>Normalización automática de productos</li>
+                    <li>Procesamiento fuera del flujo principal</li>
+                </ul>
+            </section>
+
+            <footer style="text-align: center; margin-top: 40px; color: #666">
+                Documento técnico — Arquitectura IA On-Premise
+            </footer>
+        </div>
+
+        <script>
+            const ctx = document.getElementById("roiChart");
+            new Chart(ctx, {
+                type: "line",
+                data: {
+                    labels: ["Año 1", "Año 2", "Año 3"],
+                    datasets: [
+                        {
+                            label: "Infraestructura Local",
+                            data: [32000, 38000, 44000],
+                            borderWidth: 3,
+                        },
+                        {
+                            label: "Infraestructura Cloud",
+                            data: [20000, 40000, 60000],
+                            borderWidth: 3,
+                        },
+                    ],
+                },
+                options: { responsive: true },
+            });
+        </script>
+    </body>
+</html>
