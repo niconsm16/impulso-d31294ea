@@ -4,6 +4,8 @@
     right: 0;
     width: auto;
     padding: 0.5rem;
+    display: grid;
+    gap: 0.5rem;
     z-index: 20;
 }
 
@@ -24,4 +26,5 @@
 .global-icons svg {
     height: 30px;
     width: 30px;
+    fill: black;
 }

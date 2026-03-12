@@ -45,13 +45,12 @@
     --radius: 0.75rem;
 
     --azul: #0d2b51;
-    --naranja: #f05421;
     --blanco: #f3f3f3;
+    --naranja: #f05421;
     --minuto_cero-bg: linear-gradient(135deg, #ffffff, #d8d8d8);
     --mentor-bg: linear-gradient(135deg, #2b2b2b, #000000);
-
-    --color-mentor: #050a12;
     --color-mentor-transparent: #050a129c;
+    --color-mentor: #050a12;
 
     --celeste-gradient: linear-gradient(
         135deg,
