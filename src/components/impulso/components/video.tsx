@@ -10,6 +10,7 @@ export default function ImpulsoVideo() {
         src="assets/video/video.webm"
         controls
         className="impulso-video"
+        poster="assets/images/poster.jpg"
       ></video>
     </motion.div>
   );
