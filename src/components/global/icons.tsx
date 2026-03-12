@@ -1,0 +1,17 @@
+import SystemIcon from "../icons/SystemIcon";
+import { globalIcons } from "./data";
+import "./style.css";
+
+export default function Icons() {
+  return (
+    <div className={"global-icons"}>
+      {globalIcons.map((icon) => (
+        <div className={"icon"} key={icon.link}>
+          <a href={icon.link} target="_self" title={icon.title}>
+            <icon.component />
+          </a>
+        </div>
+      ))}
+    </div>
+  );
+}

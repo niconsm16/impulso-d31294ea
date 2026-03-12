@@ -1,0 +1,27 @@
+.global-icons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    padding: 0.5rem;
+    z-index: 20;
+}
+
+.global-icons .icon {
+    background: #b1b1b175;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    height: 50px;
+    width: 50px;
+    transition: all 0.3s ease;
+}
+
+.global-icons .icon:hover {
+    background: #d2d2d2;
+}
+
+.global-icons svg {
+    height: 30px;
+    width: 30px;
+}
