@@ -10,7 +10,7 @@ type TGlobalIcon = {
 export const globalIcons: TGlobalIcon[] = [
   {
     component: SystemIcon,
-    link: "/hardware.html",
+    link: "hardware.html",
     title: "Sistemas",
   },
 ];
