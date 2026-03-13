@@ -28,3 +28,7 @@
     width: 30px;
     fill: black;
 }
+
+.args-icon {
+    fill: transparent !important;
+}

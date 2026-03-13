@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Propuesta de Plataforma de Integración para E-commerce</title>
+
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background: #f3f3f3;
+                margin: 0;
+                padding: 0;
+                color: #222;
+                line-height: 1.6;
+                background: url(assets/images/impulso_bg.jpg);
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+            header {
+                background: #0d2b51d1;
+                color: white;
+                padding: 30px;
+            }
+
+            header h1 {
+                margin: 0;
+                font-size: 28px;
+            }
+
+            .container {
+                max-width: 1100px;
+                margin: auto;
+                padding: 30px;
+            }
+
+            section {
+                background: #ffffffe3;
+                padding: 25px;
+                margin-bottom: 20px;
+                border-radius: 8px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+            }
+
+            h2 {
+                color: #f05421;
+                margin-top: 0;
+            }
+
+            ul {
+                padding-left: 20px;
+            }
+
+            footer {
+                text-align: center;
+                padding: 20px;
+                color: #666;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>
+                Propuesta de Desarrollo de Plataforma de Integración para
+                E-commerce
+            </h1>
+        </header>
+
+        <div class="container">
+            <section>
+                <h2>Descripción General</h2>
+                <p>
+                    El proyecto consiste en el desarrollo de una plataforma
+                    tecnológica basada en
+                    <strong
+                        >bases de datos y servicios de software expuestos
+                        mediante APIs</strong
+                    >, diseñada específicamente para integrarse con empresas del
+                    sector <strong>e-commerce</strong> y permitir la conexión
+                    con servicios de terceros.
+                </p>
+            </section>
+
+            <section>
+                <h2>Arquitectura de Software</h2>
+
+                <p>
+                    El núcleo de las APIs estará implementado en
+                    <strong>Rust</strong>, un lenguaje elegido por su alto
+                    rendimiento, seguridad de memoria y eficiencia en el consumo
+                    de recursos. Esto permite generar servicios extremadamente
+                    ligeros, reduciendo la carga sobre los servidores y
+                    mejorando la estabilidad del sistema.
+                </p>
+
+                <p>
+                    La interacción con distintos agentes o integraciones
+                    externas también se implementará en Rust, permitiendo
+                    mantener una arquitectura homogénea, rápida y eficiente.
+                </p>
+
+                <p>
+                    Para el desarrollo de las APIs se utilizará el framework
+                    <strong>Axum</strong>, que permite construir servicios web
+                    de alto rendimiento y manejar grandes volúmenes de
+                    solicitudes con baja latencia, manteniendo el sistema
+                    escalable.
+                </p>
+
+                <p>
+                    La orquestación del sistema podrá realizarse mediante
+                    contenedores utilizando
+                    <strong>Docker</strong> o <strong>K3S</strong>, o
+                    integrándose directamente en los clústers de la
+                    infraestructura de la empresa cliente si estos estuvieran
+                    disponibles.
+                </p>
+            </section>
+
+            <section>
+                <h2>Desarrollo de Interfaz de Usuario (Opcional)</h2>
+
+                <p>
+                    En caso de que el cliente requiera una interfaz visual para
+                    operar el sistema, podemos desarrollar una aplicación
+                    utilizando <strong>TypeScript</strong> junto con frameworks
+                    modernos como <strong>Svelte</strong> o
+                    <strong>SolidJS</strong>.
+                </p>
+
+                <p>
+                    Estas tecnologías permiten crear interfaces extremadamente
+                    rápidas, reactivas y livianas, ideales para paneles de
+                    control, dashboards analíticos o herramientas
+                    administrativas conectadas a nuestras APIs.
+                </p>
+            </section>
+
+            <section>
+                <h2>Estrategias de Base de Datos</h2>
+
+                <p>
+                    Existen tres enfoques posibles para el uso de bases de
+                    datos:
+                </p>
+
+                <ul>
+                    <li>
+                        Utilizar la base de datos existente del cliente (por
+                        ejemplo PostgreSQL) con una tabla o esquema dedicado.
+                    </li>
+                    <li>
+                        Implementar una base de datos dedicada dentro de la
+                        infraestructura del cliente.
+                    </li>
+                    <li>Desplegar una infraestructura completamente propia.</li>
+                </ul>
+
+                <p>
+                    En caso de desplegar nuestra propia arquitectura, el sistema
+                    podría incluir:
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>PostgreSQL</strong> como base de datos
+                        principal.
+                    </li>
+                    <li>
+                        <strong>PGVector</strong> para funcionalidades
+                        relacionadas con inteligencia artificial.
+                    </li>
+                    <li>
+                        <strong>Redis</strong> para cacheo y manejo de
+                        solicitudes iniciales.
+                    </li>
+                    <li>
+                        <strong>ScyllaDB</strong> para escalar en caso de
+                        crecimiento masivo del tráfico.
+                    </li>
+                    <li>
+                        <strong>DynamoDB local</strong> para estrategias de
+                        circuit breaker y derivación a cloud en momentos pico.
+                    </li>
+                </ul>
+
+                <p>
+                    Nuestra estrategia prioriza el uso de bases de datos para
+                    resolver la mayor cantidad de operaciones posibles. La
+                    inteligencia artificial se utiliza
+                    <strong>únicamente de manera estratégica</strong>, en los
+                    casos donde realmente aporta valor, reduciendo
+                    significativamente el consumo de recursos.
+                </p>
+            </section>
+
+            <section>
+                <h2>Infraestructura y Despliegue</h2>
+
+                <p>
+                    La plataforma se ejecutará sobre
+                    <strong>servidores Linux</strong> o contenedores basados en
+                    <strong>Alpine Linux</strong>, priorizando eficiencia y bajo
+                    consumo de recursos.
+                </p>
+
+                <p>
+                    Para tareas de inteligencia artificial puede utilizarse
+                    inicialmente infraestructura como servicio (IaaS). Sin
+                    embargo, a largo plazo esto puede generar costos crecientes.
+                </p>
+
+                <p>
+                    Una alternativa estratégica consiste en utilizar hardware
+                    local o aprovechar infraestructura disponible del cliente.
+                    Esto permite reducir los costos operativos de manera
+                    significativa.
+                </p>
+
+                <p>
+                    Si el cliente dispone de servidores propios, se puede
+                    diseñar una estrategia que utilice parte de su
+                    infraestructura sin interferir con sus sistemas principales.
+                </p>
+            </section>
+
+            <section>
+                <h2>Comparación de Costos</h2>
+
+                <h3>Infraestructura del Cliente</h3>
+                <p>
+                    Si la empresa proporciona parte de su infraestructura, el
+                    costo operativo puede ser prácticamente nulo, siempre que el
+                    hardware esté bajo control operativo del sistema.
+                </p>
+
+                <h3>Infraestructura en la Nube</h3>
+                <p>
+                    El uso intensivo de servicios cloud puede generar costos
+                    superiores a <strong>1.000 USD mensuales</strong>,
+                    dependiendo del volumen de operaciones.
+                </p>
+
+                <h3>Infraestructura Local</h3>
+                <p>
+                    La inversión inicial en hardware puede variar entre
+                    <strong>10.000 y 30.000 USD</strong>, incluyendo
+                    equipamiento para ejecutar modelos de inteligencia
+                    artificial de forma local.
+                </p>
+
+                <p>
+                    En muchos escenarios, luego de aproximadamente
+                    <strong>tres meses de operación</strong>, los costos
+                    comienzan a ser más favorables frente al uso exclusivo de
+                    servicios cloud.
+                </p>
+
+                <p>
+                    Sin embargo, en entornos de uso intensivo algunos
+                    componentes de hardware pueden requerir renovación en ciclos
+                    cercanos a <strong>seis meses</strong>.
+                </p>
+
+                <p>
+                    Cabe aclarar que estos valores corresponden principalmente a
+                    la infraestructura, ya que el desarrollo profesional del
+                    sistema puede realizarse en tiempos relativamente cortos
+                    gracias a la arquitectura planteada.
+                </p>
+            </section>
+
+            <section>
+                <h2>Conclusión</h2>
+
+                <p>
+                    El proyecto propone una arquitectura flexible que puede
+                    integrarse con la infraestructura existente de empresas de
+                    e-commerce o desplegarse de forma independiente.
+                </p>
+
+                <p>
+                    El enfoque combina una arquitectura sólida basada en
+                    <strong>Rust, Axum y bases de datos optimizadas</strong> con
+                    un uso estratégico de inteligencia artificial, permitiendo
+                    construir un sistema eficiente, escalable y sostenible en el
+                    tiempo.
+                </p>
+
+                <p>
+                    La elección final entre infraestructura del cliente, nube o
+                    hardware propio dependerá del volumen de operaciones
+                    esperado, las políticas tecnológicas de la empresa y la
+                    estrategia de optimización de costos.
+                </p>
+            </section>
+        </div>
+
+        <footer>
+            Propuesta tecnológica — Plataforma de integración para e-commerce
+        </footer>
+    </body>
+</html>
