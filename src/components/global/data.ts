@@ -22,12 +22,12 @@ export const globalIcons: TGlobalIcon[] = [
     title: "Sistemas",
   },
   {
-    component: ArgsIcon,
+    component: PrototypeIcon,
     link: "prototype.html",
     title: "Prototipo",
   },
   {
-    component: PrototypeIcon,
+    component: ArgsIcon,
     link: "args.html",
     title: "Argumento",
   },
